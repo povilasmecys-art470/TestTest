@@ -1,0 +1,105 @@
+:root{
+   --size-md: 40px;
+}
+
+*{
+   margin: 0;   
+   padding: 0;
+}
+
+body{
+   display: flex;
+   flex-direction: column;
+   gap: var(--size-md);
+   background-color: black;
+}
+
+/* Navigation Start ============================ */
+nav{
+   width: 100%;
+   background-color: blue;
+}
+
+@media (min-width: 550px) {
+   nav{
+       background-color: rgb(255, 0, 0);
+   }
+}
+
+nav ul{
+   list-style: none;
+   display: flex;
+   flex-direction: row;;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+    padding: 16px var(--size-md);
+
+}
+
+nav a{
+   color: white;
+   text-decoration: none;
+   font-size: 20px;
+   padding: 10px;
+}
+nav a:hover{
+   color: black;
+}
+/* Navigation End ============================ */
+
+/* Header Start ============================ */
+
+header{
+   height: 200px;
+   background-color: slategray;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: var(--size-md);
+}
+
+header p{
+   font-size: 50px;
+   color: white;
+}
+/* Header End ============================ */
+/* Main Start ============================ */
+
+main{ 
+background-color: rgb(96, 102, 249);
+padding: var(--size-md);
+gap: var(--size-md);
+}
+
+@media (min-width: 550px) {
+ main{ 
+   display: flex;
+   background-color: rgb(249, 96, 137);
+ }  
+ 
+}
+
+
+
+
+
+/* Main End ============================ */
+/* Footer Start ============================ */
+
+footer{
+   
+   background-color: rgb(0, 0, 0);
+   color: white; 
+   display: flex;
+   justify-content: center;
+   padding: var(--size-md);
+}
+
+footer p{
+
+}
+/* Footer End ============================ */
+
+
+
